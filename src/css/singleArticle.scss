@@ -1,0 +1,178 @@
+.article-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .article-main-content {
+    display: flex;
+    .content-right {
+      width: 65%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .title {
+        color: var(--black2white);
+        margin-bottom: 0.625rem;
+        font-weight: 700;
+        line-height: 2rem;
+        font-size: 1.75rem;
+      }
+      .article-date {
+        font-size: 0.875rem;
+        color: var(--dark5002light500);
+        margin-bottom: 1rem;
+        p {
+          font-size: 0.875rem;
+          font-weight: 500;
+          line-height: 1.25rem;
+        }
+      }
+      p.contentText {
+        margin: 1rem 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.875rem;
+        overflow-wrap: break-word;
+        color: var(--softblack2white);
+      }
+      img.img {
+        border-radius: 1rem;
+        box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+      }
+    }
+    .content-left {
+      width: 35%;
+      padding: 0 1.25rem;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      .InsureFamily-wrapper {
+        width: 100%;
+        border-radius: 0.625rem;
+        border: 1px solid var(--dark2502light250);
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+          color: var(--dark7502light750);
+          font-weight: 700;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+          padding-bottom: 0.625rem;
+          margin: 0;
+        }
+        p {
+          color: var(--dark5002light500);
+          font-weight: 600;
+          margin: 0.625rem 0 1.25rem;
+          line-height: 1.5rem;
+        }
+        .btn {
+          padding: 0.4rem 0.8rem;
+          margin-bottom: 1rem;
+        }
+        a.tnc {
+          color: var(--primary2white);
+        }
+      }
+    }
+  }
+}
+
+// more content
+.more-content {
+  margin-top: 2rem;
+  h2 {
+    margin: calc(1rem - 1px) 0 calc(0.25rem + 1px);
+    color: var(--black2white);
+    letter-spacing: 0.02rem;
+    &.commonHeading {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 2rem;
+      @media screen and (min-width: 500px) {
+        font-size: 1.375rem;
+      }
+    }
+    &.commonSmallHeading {
+      font-size: 0.875rem;
+      font-weight: 600;
+      @media screen and (min-width: 500px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  p.commonParagraph {
+    color: var(--black2white);
+    margin: calc(1rem - 1px) 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    overflow-wrap: break-word;
+  }
+  h3.commonNumberedHeading {
+    letter-spacing: unset;
+    margin: calc(1rem - 1px) 0 0.625rem;
+    font-weight: 600;
+    color: var(--black2white);
+    font-size: 0.875rem;
+    @media screen and (min-width: 500px) {
+      font-size: 1.175rem;
+    }
+  }
+  .smallNumbered-item {
+    display: flex;
+    position: relative;
+    span {
+      display: inline-block;
+      position: absolute;
+      &.item-index {
+        margin-top: 1.125rem;
+        left: -18px;
+        color: var(--dark7502light750);
+      }
+      &.dot {
+        margin-top: calc(1.75rem);
+        height: 0.375rem;
+        width: 0.375rem;
+        border-radius: 50%;
+        background: var(--dark7502light750);
+        left: -18px;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    &.centered {
+      text-align: center;
+    }
+    tr.tableHeading {
+      background: var(--light22primary);
+      color: var(--softblack2white);
+      width: 100%;
+    }
+    th,
+    td {
+      border: 1px solid var(--black1002primary);
+      padding: calc(0.625rem);
+      padding-left: calc(1.875rem);
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 0.875rem;
+      @media screen and (max-width: 500px) {
+        font-size: 0.625rem;
+        padding: calc(0.625rem) !important;
+      }
+    }
+    td {
+      color: var(--dark7502light750);
+      font-weight: 500;
+      vertical-align: super;
+    }
+  }
+}
